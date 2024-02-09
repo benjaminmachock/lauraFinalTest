@@ -1,11 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-function NavTabs({ setCurrentTab, currentTab }) {
-  const handleTabChange = (tab) => {
-    setCurrentTab(tab);
-  };
-
+function NavTabs() {
   const currentPage = useLocation().pathname;
 
   return (
