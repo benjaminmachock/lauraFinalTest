@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 function NavTabs({ setCurrentTab, currentTab }) {
   const handleTabChange = (tab) => {
@@ -22,8 +22,7 @@ function NavTabs({ setCurrentTab, currentTab }) {
       <li className="nav-item">
         <Link
           to="/About"
-          className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}
-          onClick={() => handleTabChange('About')}
+          className={currentPage === "/About" ? "nav-link active" : "nav-link"}
         >
           About
         </Link>
@@ -31,8 +30,9 @@ function NavTabs({ setCurrentTab, currentTab }) {
       <li className="nav-item">
         <Link
           to="/Portfolio"
-          className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
-          onClick={() => handleTabChange('Portfolio')}
+          className={
+            currentPage === "/Portfolio" ? "nav-link active" : "nav-link"
+          }
         >
           Portfolio
         </Link>
@@ -40,8 +40,7 @@ function NavTabs({ setCurrentTab, currentTab }) {
       <li className="nav-item">
         <Link
           to="/Resume"
-          className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
-          onClick={() => handleTabChange('Resume')}
+          className={currentPage === "/Resume" ? "nav-link active" : "nav-link"}
         >
           Resume
         </Link>
@@ -49,7 +48,9 @@ function NavTabs({ setCurrentTab, currentTab }) {
       <li className="nav-item">
         <Link
           to="/Contact"
-          className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+          className={
+            currentPage === "/Contact" ? "nav-link active" : "nav-link"
+          }
         >
           Contact
         </Link>
